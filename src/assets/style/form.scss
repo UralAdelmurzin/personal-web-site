@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+.form {
+  padding: 5px;
+  min-width: 400px;
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: $box_shadow_secondary;
+
+  & h2 {
+    text-align: center;
+  }
+
+  &_slot {
+    position: relative;
+  }
+
+  &_bottom {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &_helper {
+    color: $bg_fill_privary;
+    font-size: 12px;
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    margin: 10px;
+    padding: 5px;
+    min-width: 200px;
+
+    &_slot {
+      margin-bottom: 15px;
+    }
+
+    &_bottom {
+      display: block;
+
+      button {
+        margin: 10px auto;
+      }
+    }
+  }
+}

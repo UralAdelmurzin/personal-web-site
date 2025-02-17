@@ -1,0 +1,30 @@
+.inputfield {
+  border: none;
+  border-bottom: 1px solid rgb(187, 187, 187);
+  outline: none;
+  padding: 5px 5px 3px 5px;
+  margin: 10px 0 20px 0;
+  width: 100%;
+
+  &_wrapper {
+    position: relative;
+  }
+
+  &:not(:placeholder-shown) ~ .inputfield_placeholder,
+  &:focus ~ .inputfield_placeholder {
+    transition: all ease .2s;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    font-size: 10px;
+  }
+
+  &_placeholder {
+    transition: all ease .2s;
+    position: absolute;
+    top: 14px;
+    left: 2px;
+    color: rgb(187, 187, 187);
+  }
+
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import './variables.scss';
+@import './form.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  min-width: 350px;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $bg_primary;
+    border-radius: 2px;
+  }
+}
+
+button {
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mb {
+  &-10 {
+    margin-bottom: 10px;
+  }
+  &-20 {
+    margin-bottom: 20px;
+  }
+}
+
+.mt {
+  &-10 {
+    margin-top: 10px;
+  }
+  &-20 {
+    margin-top: 20px;
+  }
+}
+
+.system_text_color {
+  color: $bg_fill_privary;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.0);
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 2px;
+  }
+}
+
+.icon {
+  fill: $bg_fill_privary;
+}
+
+
+@media (max-width: 768px){
+  .mw768 {
+    display: none;
+  }
+
+  h1 {
+    margin: 5px 0;
+    font-size: 25px;
+  }
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px){
+  .mw576 {
+    display: none;
+  }
+  
+  .container {
+    max-width: 540px;
+  }
+}
