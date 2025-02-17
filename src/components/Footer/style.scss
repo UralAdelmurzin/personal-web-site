@@ -24,6 +24,12 @@
         top: 0;
         left: 0;
         width: 40px;
+        max-width: 40px;
+        max-height: 40px;
+      }
+
+      & a {
+        color: inherit;
       }
     }
 
