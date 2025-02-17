@@ -1,31 +1,75 @@
-.landing {
-  .contacts {
-    &_body {
-      position: relative;
+@import '/src/assets/style/variables.scss';
 
-      &::before {
-        content: '';
-        background-image: url('../../assets/img/calculator.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 250px;
-        height: 250px;
-        position: absolute;
-        top: 0px;
-        right: 0;
+.contacts {
+  &_body {
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url('../../assets/img/calculator.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 250px;
+      height: 250px;
+      position: absolute;
+      top: 0px;
+      right: 0;
+    }
+  }
+  &_title {
+    width: 50%;
+  }
+  &_text {
+    width: 50%;
+  }
+  &_field {
+    width: 300px;
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .modal {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+    h3 {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 15px 0;
+    }
+
+    .btn {
+      background-color: $bg_fill_privary;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $bg_fill_privary;
       }
-    }
-    &_title {
-      width: 50%;
-    }
-    &_text {
-      width: 50%;
-    }
-    &_field {
-      width: 300px;
     }
   }
 }
+
 
 @media (max-width: 1500px) {
 
@@ -40,37 +84,35 @@
 }
 
 @media (max-width: 768px){
-  .landing {
-    .contacts {
-      &_body {
-        position: relative;
-        padding-top: 200px;
-  
-        &::before {
-          content: '';
-          background-image: url('../../assets/img/calculator.jpg');
-          background-size: cover;
-          background-repeat: no-repeat;
-          width: 200px;
-          height: 200px;
-          position: absolute;
-          top: 0px;
-          right: calc((100% / 2) - 100px);
-        }
-      }
-      &_title {
-        width: 100%;
-      }
-      &_text {
-        width: 100%;
-      }
-      &_field {
-        width: 100%;
+  .contacts {
+    &_body {
+      position: relative;
+      padding-top: 200px;
+
+      &::before {
+        content: '';
+        background-image: url('../../assets/img/calculator.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 0px;
+        right: calc((100% / 2) - 100px);
       }
     }
+    &_title {
+      width: 100%;
+    }
+    &_text {
+      width: 100%;
+    }
+    &_field {
+      width: 100%;
+    }
   }
-  
 }
+
 
 @media (max-width: 576px){
   .btn {

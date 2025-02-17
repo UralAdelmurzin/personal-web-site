@@ -5,21 +5,22 @@ import './style.scss';
 function Contacts() {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
+    phone: "",
     message: ""
   });
+  // Стан для контролю модального вікна
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
-    console.log(e, 'e - handleChange');
-    
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData?.name?.length || !formData?.name?.length) {
-      return alert("Please fill the form.");
+    // Простенька валідація форми (наприклад, перевірка поля name та phone)
+    if (!formData?.name?.length || !formData?.phone?.length) {
+      return alert("Будь ласка, заповніть форму.");
     }
 
     const googleFormURL = "https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse";
@@ -35,7 +36,8 @@ function Contacts() {
       mode: "no-cors"
     });
 
-    alert("Your message has been sent!");
+    // Відкриваємо модальне вікно після успішної відправки форми
+    setShowModal(true);
   };
 
   return (
@@ -46,7 +48,7 @@ function Contacts() {
           <h3 className='contacts_title'>We organize the entire process efficiently, quickly, and affordably</h3>
           <p className='contacts_text'>Our manager will call you back within 10 minutes and answer all your questions.</p>
 
-          <form onSubmit={handleSubmit} action="submit" className='contacts_form'>
+          <form onSubmit={handleSubmit} className='contacts_form'>
             <div className="contacts_field">
               <InputField placeholder='Your Name' name="name" onChange={handleChange} required />
             </div>
@@ -61,6 +63,17 @@ function Contacts() {
           </form>
         </div>
       </div>
+
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <h3>Thank you {formData.name}!</h3>
+            <p>The form has been successfully sent.</p>
+            <p>We will contact you shortly.</p>
+            <button className="btn" onClick={() => setShowModal(false)}>Ok</button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
