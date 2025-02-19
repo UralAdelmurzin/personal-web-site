@@ -16,12 +16,15 @@
       right: 0;
     }
   }
+
   &_title {
     width: 50%;
   }
+
   &_text {
     width: 50%;
   }
+
   &_field {
     width: 300px;
   }
@@ -67,6 +70,10 @@
         background-color: $bg_fill_privary;
       }
     }
+  }
+
+  .btn_wrapper .btn {
+    min-width: 200px;
   }
 }
 

@@ -81,10 +81,21 @@
       height: 300px;
       left: calc(50% - 150px);
     }
+
+    // &_container h2 {
+    //   padding: 300px 10px;
+    // }
+
+    &_container .btn {
+      position: absolute;
+      bottom: 20px;
+      right: 50%;
+      transform: translateX(50%);
+    }
   }
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
 }
 
 @media (min-width: 576px){

@@ -57,7 +57,11 @@ function Contacts() {
             </div>
             <div className="contacts_field">
               <div className="btn_wrapper">
-                <button className='btn' type='submit'>Submit Request</button>
+                <button className='btn' type='submit'>
+                  Submit
+                  <br />
+                  Request
+                </button>
               </div>
             </div>
           </form>
