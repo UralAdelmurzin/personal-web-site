@@ -29,7 +29,7 @@ const deliveryTexts = [
     img: '../img//handyman-step-5.jpg'
   },
   {
-    title: 'Guarantee and Final Inspection',
+    title: 'Work Is Done When Client Satisfied',
     text: 'After completing the work, we review the results with you. We guarantee quality and address any concerns.',
     img: '../img//handyman-step-6.jpg'
   }

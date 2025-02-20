@@ -7,7 +7,7 @@ export const contacts = {
   city: "Los Angeles",
   country: 'USA',
 
-  siteName: 'smaple.com',
+  siteName: 'techsavyguy.com',
 
   tiktokUrl: 'https://www.tiktok.com/@uraladel',
   tiktokName: '@uraladel',
