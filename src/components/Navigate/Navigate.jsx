@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.scss';
 
 import phone from 'src/assets/img/icon-phone.svg';
+import logo from 'src/assets/img/logo.png';
 import menuIcon from 'src/assets/img/icon-menu.svg';
 import { contacts } from 'src/utils/datasets';
 
@@ -38,7 +39,7 @@ function Navigate({ links }) {
         <div className="container">
           <div className="nav_section">
             <a className="nav_logo" >
-              {/* <img src={logo} alt="" /> */}
+              <img src={logo} alt="" />
               {/* LOGO */}
             </a>
             <div className="nav_main">
