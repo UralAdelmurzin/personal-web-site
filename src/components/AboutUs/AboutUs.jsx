@@ -29,6 +29,7 @@ function AboutUs() {
           <p>✔️ Friendly & Professional Service – Customer satisfaction is our priority! We listen, communicate, and work with you to achieve the best results.</p>
 
           <p>We treat every project as if it were our own. Whether you need quick fixes, renovations, or expert advice, we’re here to help.</p>
+          
         </div>
       </div>
     </div>
