@@ -14,8 +14,6 @@ function AboutUs() {
 
           <p>✔️ Hundreds of Satisfied Clients – We have built a reputation for excellence, earning the trust of numerous happy customers.</p>
 
-          <p>✔️ Extensive Portfolio – From small repairs to major home improvements, our diverse portfolio showcases our commitment to quality workmanship.</p>
-
           <p>✔️ Affordable & Transparent Pricing – No hidden fees! We provide clear and fair pricing for all our services.</p>
 
           <p>✔️ Punctual & Reliable – We respect your time and always strive to complete projects on schedule.</p>
@@ -28,7 +26,7 @@ function AboutUs() {
 
           <p>✔️ Friendly & Professional Service – Customer satisfaction is our priority! We listen, communicate, and work with you to achieve the best results.</p>
 
-          <p>We treat every project as if it were our own. Whether you need quick fixes, renovations, or expert advice, we’re here to help.</p>
+          <p>We treat every project as if it were our own. Whether you need quick fixes.</p>
           
         </div>
       </div>
